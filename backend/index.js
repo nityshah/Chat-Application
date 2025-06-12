@@ -29,7 +29,7 @@ app.use("/api/messages", messageRoutes);
 
 const PORT = process.env.PORT || 3000;
 
-server.listen(5001, () => {
+server.listen(PORT, () => {
     console.log("Server is running at " + PORT);
     connectDB();
 })
