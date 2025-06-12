@@ -11,6 +11,7 @@ const io = new Server(server, { // ana thi socket.io ma je Server class che eno 
         origin: ["http://localhost:5173",
             "https://chat-application-sigma-teal.vercel.app"
         ],
+        methods: ["GET", "POST"],
         credentials:true
     }
 });
