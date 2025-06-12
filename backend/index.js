@@ -17,7 +17,9 @@ app.use(express.json());
 // app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173",
+        "https://chat-application-sigma-teal.vercel.app"
+    ],
     credentials: true
 }))
 
